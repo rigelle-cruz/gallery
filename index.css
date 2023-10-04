@@ -1,3 +1,35 @@
+/*
+ * montserrat
+================================================================================ */
+
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("./montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("./montserrat/montserrat-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "montserrat-light";
+  src: url("./montserrat/montserrat-light-webfont.woff2") format("woff2"), url("./montserrat/montserrat-light-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "montserrat-extralight";
+  src: url("./montserrat/montserrat-extralight-webfont.woff2") format("woff2"), url("./montserrat/montserrat-extralight-webfont.woff2") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "montserrat-thin";
+  src: url("./montserrat/montserrat-thin-webfont.woff2") format("woff2"), url("./montserrat/montserrat-thin-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -23,12 +55,20 @@ body, html {
 }
 
 .overlay-content h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "montserrat-thin", sans-serif;
   font-size: 24px;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
 }
+.overlay-content p {
+  font-family: "montserrat-extralight", sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+
 
 /* gallery */
 
@@ -87,6 +127,8 @@ input[type=radio] {
   flex-direction: column;
   align-items: center;
 }
+
+/* cards */
 
 .cards {
   position: relative;
