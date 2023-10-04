@@ -33,7 +33,7 @@ body, html {
 /* gallery */
 
 .gallery {
-  --s: 250px; /* control the size */
+  --s: 300px; /* control the size */
   --g: 10px;  /* control the gap */
   --f: 1.5;   /* control the scale factor */
   
@@ -51,7 +51,7 @@ body, html {
   min-width: 100%;
   object-fit: cover;
   cursor: pointer;
-  filter: grayscale(80%);
+  filter: grayscale(70%);
   transition: .35s linear;
 }
 
@@ -67,7 +67,7 @@ input[type=radio] {
 
 .card {
   position: absolute;
-  width: 60%;
+  width: 50%;
   height: 100%;
   left: 0;
   right: 0;
@@ -78,8 +78,8 @@ input[type=radio] {
 
 .container {
   width: 100%;
-  max-width: 800px;
-  max-height: 600px;
+  max-width: 1000px;
+  max-height: 700px;
   height: 100%;
   transform-style: preserve-3d;
   display: flex;
