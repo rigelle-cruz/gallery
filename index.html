@@ -7,41 +7,67 @@
     <title>gallery</title>
 </head>
 <body>
-    <div class="slideshow-container">
-       
-        <div class="slide">
-          <div class="image-container">
-            <div class="blur-image">
-                <img src="images/archi/render2.jpg" alt="Blurred Background">
+
+  <div class="container">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+  <div class="cards">
+    <label class="card" for="item-1" id="image-1">
+      
+      <div class="slide">
+          <div class="overlay-content">
+            <div class="gallery">
+              <img src="images/archi/render1.jpg" alt="">
+              <img src="images/archi/render2.jpg" alt="">
+              <img src="images/archi/render3.jpg" alt="">
+              <img src="images/archi/render4.jpg" alt="">
+              <img src="images/archi/shadow3.jpg" alt="">
+              <img src="images/archi/shadow2.jpg" alt="">
             </div>
-            <div class="overlay-content">
-              <div class="gallery">
-                <img src="images/archi/render1.jpg" alt="">
-                <img src="images/archi/render2.jpg" alt="">
-                <img src="images/archi/render3.jpg" alt="">
-                <img src="images/archi/render4.jpg" alt="">
-                <img src="images/archi/shadow1.jpg" alt="">
-                <img src="images/archi/shadow2.jpg" alt="">
-              </div>
-              <h1>Little Home Project (2019)</h1>
-            </div>
+            <h1>Little Home Project (2019)</h1>
           </div>
-        </div>
-        <div class="slide">
-          <div class="image-container">
-            <div class="blur-image">
-                <img src="images/archi/render3.jpg" alt="Blurred Background">
-            </div>
-            <div class="overlay-content">
-                <img src="images/archi/render3.jpg" alt="Overlay Image">
-                <h1>Your Text Here</h1>
-            </div>
+      </div>
+    </label>
+    <label class="card" for="item-2" id="image-2">
+      <div class="slide">
+        <div class="overlay-content">
+          <div class="gallery">
+            <img src="images/archi/render1.jpg" alt="">
+            <img src="images/archi/render2.jpg" alt="">
+            <img src="images/archi/render3.jpg" alt="">
+            <img src="images/archi/render4.jpg" alt="">
+            <img src="images/archi/shadow3.jpg" alt="">
+            <img src="images/archi/shadow2.jpg" alt="">
           </div>
+          <h1>Little Home Project (2019)</h1>
         </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    
+    </label>
+    <label class="card" for="item-3" id="image-3">
+      <div class="slide">
+        <div class="overlay-content">
+          <div class="gallery">
+            <img src="images/archi/render1.jpg" alt="">
+            <img src="images/archi/render2.jpg" alt="">
+            <img src="images/archi/render3.jpg" alt="">
+            <img src="images/archi/render4.jpg" alt="">
+            <img src="images/archi/shadow3.jpg" alt="">
+            <img src="images/archi/shadow2.jpg" alt="">
+          </div>
+          <h1>Little Home Project (2019)</h1>
+        </div>
+    </div>
+    </label>
+  </div>
+  <div class="slide-indicators">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  
+ 
+  </div>
     <script src="script.js"></script>
 </body>
 </html>
